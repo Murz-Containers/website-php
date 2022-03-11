@@ -12,7 +12,7 @@ ENV PATH /var/www/html/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/
 WORKDIR /var/www/html
 
 COPY ./config/nginx.conf /etc/nginx/nginx.conf
-COPY ./config/nginx-site.conf /etc/nginx/conf.d/site.conf
+COPY ./config/nginx-site.conf /etc/nginx/conf.d/default.conf
 COPY ./config/php.ini /usr/local/etc/php/conf.d/zz_site.ini
 
 USER root
